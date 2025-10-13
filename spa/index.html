@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ónix Spa</title>
+
+  <!-- Fuente y Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D4AF37",
+            "background-light": "#F5F3EF",
+            "background-dark": "#1A1A1A",
+            "content-light": "#333333",
+            "content-dark": "#E0E0E0",
+            "olive": "#556B2F",
+            "beige": "#F5F5DC"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+  <div class="flex flex-col min-h-screen">
+    <main class="flex-grow">
+      <!-- Banner principal -->
+      <div class="relative h-[60vh] w-full">
+        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover" style="background-image: url('assets/img/banner.jpg');">
+          <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <img src="assets/img/logo.jpg" alt="Logo Ónix Spa" class="w-20 mb-3 rounded-full">
+          <h1 class="text-4xl font-bold">Ónix Spa</h1>
+          <p class="mt-2 text-lg">Tu santuario de bienestar y belleza</p>
+        </div>
+      </div>
+
+      <!-- Botones principales -->
+      <div class="p-6 space-y-6">
+        <div class="grid grid-cols-1 gap-4">
+          <button class="w-full h-14 rounded-lg bg-primary text-black font-bold text-lg tracking-wide" onclick="window.location.href='pages/reservas.html'">
+            Reservar
+          </button>
+          <button class="w-full h-14 rounded-lg bg-beige dark:bg-olive text-content-light dark:text-white font-bold text-lg tracking-wide" onclick="window.location.href='pages/servicios.html'">
+            Servicios
+          </button>
+          <button class="w-full h-14 rounded-lg bg-beige dark:bg-olive text-content-light dark:text-white font-bold text-lg tracking-wide" onclick="window.location.href='pages/productos.html'">
+            Productos
+          </button>
+        </div>
+
+        <!-- Sección Experiencias -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4 text-content-light dark:text-content-dark">Experiencias</h2>
+          <div class="flex overflow-x-auto pb-4 gap-4 snap-carousel">
+            <div class="flex-shrink-0 w-80 snap-center">
+              <div class="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
+                <div class="w-full h-48 bg-center bg-no-repeat bg-cover" style="background-image: url('assets/img/masaje.jpg');"></div>
+                <div class="p-4">
+                  <p class="text-lg font-semibold">Masajes Relajantes</p>
+                  <p class="text-sm text-olive dark:text-beige mt-1">Alivia el estrés con nuestros masajes personalizados.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-shrink-0 w-80 snap-center">
+              <div class="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
+                <div class="w-full h-48 bg-center bg-no-repeat bg-cover" style="background-image: url('assets/img/facial.jpg');"></div>
+                <div class="p-4">
+                  <p class="text-lg font-semibold">Tratamientos Faciales</p>
+                  <p class="text-sm text-olive dark:text-beige mt-1">Rejuvenece tu piel con nuestros tratamientos avanzados.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-shrink-0 w-80 snap-center">
+              <div class="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
+                <div class="w-full h-48 bg-center bg-no-repeat bg-cover" style="background-image: url('assets/img/ritual.jpg');"></div>
+                <div class="p-4">
+                  <p class="text-lg font-semibold">Rituales de Bienestar</p>
+                  <p class="text-sm text-olive dark:text-beige mt-1">Sumérgete en una experiencia de bienestar integral.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="flex justify-center space-x-6 pt-4">
+          <a class="text-primary hover:text-primary/80" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a class="text-primary hover:text-primary/80" href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a class="text-primary hover:text-primary/80" href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-beige dark:border-olive/30 shadow-t-lg">
+      <div class="flex justify-around p-2 text-olive dark:text-beige">
+        <a class="flex flex-col items-center gap-1 text-primary" href="index.html">
+          <span class="text-xs font-medium">Inicio</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="pages/servicios.html">
+          <span class="text-xs font-medium">Servicios</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="pages/reservas.html">
+          <span class="text-xs font-medium">Reservas</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="pages/productos.html">
+          <span class="text-xs font-medium">Productos</span>
+        </a>
+        
+      </div>
+    </footer>
+  </div>
+
+  <!-- Script general -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

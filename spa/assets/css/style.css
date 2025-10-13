@@ -1,0 +1,48 @@
+/* === Estilos globales === */
+body {
+  min-height: max(884px, 100dvh);
+  scroll-behavior: smooth;
+  font-family: "Newsreader", serif;
+}
+
+/* Tarjetas generales */
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones generales */
+button {
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Enlaces del footer */
+footer a {
+  transition: color 0.2s ease;
+}
+footer a:hover {
+  color: #d4af37;
+}
+
+/* Ajustes de imagen para tarjetas */
+img {
+  border-radius: 0.75rem;
+}
+
+/* Scroll horizontal suave */
+.overflow-x-auto {
+  scrollbar-width: none;
+}
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ónix Spa - Productos</title>
+
+  <!-- Fuente y Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D4AF37",
+            "background-light": "#F5F3EF",
+            "background-dark": "#1A1A1A",
+            "content-light": "#333333",
+            "content-dark": "#E0E0E0",
+            "olive": "#556B2F",
+            "beige": "#F5F5DC"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+  <div class="flex flex-col min-h-screen">
+
+    <!-- Encabezado -->
+    <header class="flex items-center justify-between bg-background-light dark:bg-background-dark p-4 shadow-md sticky top-0 z-10">
+      <button onclick="window.location.href='../index.html'" class="text-content-light dark:text-content-dark flex size-10 items-center justify-center rounded-full bg-primary/20 hover:bg-primary/40 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <h1 class="text-lg font-bold flex-1 text-center text-content-light dark:text-content-dark pr-10">Productos</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="grid grid-cols-2 gap-4 p-4">
+      <!-- Producto 1 -->
+      <div class="flex flex-col gap-2 group">
+        <div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow duration-300" style="background-image: url('../assets/img/producto1.jpg');"></div>
+        <p class="text-base font-medium leading-normal">Aceite de Masaje Relajante</p>
+        <p class="text-primary text-sm font-bold">$35.00</p>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="flex flex-col gap-2 group">
+        <div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow duration-300" style="background-image: url('../assets/img/producto2.jpg');"></div>
+        <p class="text-base font-medium leading-normal">Vela Aromática de Lavanda</p>
+        <p class="text-primary text-sm font-bold">$25.00</p>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="flex flex-col gap-2 group">
+        <div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow duration-300" style="background-image: url('../assets/img/producto3.jpg');"></div>
+        <p class="text-base font-medium leading-normal">Exfoliante Corporal</p>
+        <p class="text-primary text-sm font-bold">$40.00</p>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="flex flex-col gap-2 group">
+        <div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow duration-300" style="background-image: url('../assets/img/producto4.jpg');"></div>
+        <p class="text-base font-medium leading-normal">Crema Hidratante</p>
+        <p class="text-primary text-sm font-bold">$30.00</p>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="flex flex-col gap-2 group">
+        <div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow duration-300" style="background-image: url('../assets/img/producto5.jpg');"></div>
+        <p class="text-base font-medium leading-normal">Set de Regalo Spa</p>
+        <p class="text-primary text-sm font-bold">$75.00</p>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="flex flex-col gap-2 group">
+        <div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden shadow-sm group-hover:shadow-lg transition-shadow duration-300" style="background-image: url('../assets/img/producto6.jpg');"></div>
+        <p class="text-base font-medium leading-normal">Difusor de Aceites</p>
+        <p class="text-primary text-sm font-bold">$50.00</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-beige dark:border-olive/30 shadow-t-lg">
+      <div class="flex justify-around p-2 text-olive dark:text-beige">
+        <a class="flex flex-col items-center gap-1 text-primary" href="../index.html">
+          <span class="text-xs font-medium">Inicio</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="servicios.html">
+          <span class="text-xs font-medium">Servicios</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="reservas.html">
+          <span class="text-xs font-medium">Reservas</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="productos.html">
+          <span class="text-xs font-medium">Productos</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="#">
+          <span class="text-xs font-medium">Perfil</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

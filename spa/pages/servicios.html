@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ónix Spa - Servicios</title>
+
+  <!-- Tailwind y fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../assets/js/main.js"></script>
+
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D4AF37",
+            "background-light": "#F5F3EF",
+            "background-dark": "#1A1A1A",
+            "content-light": "#333333",
+            "content-dark": "#E0E0E0",
+            "olive": "#556B2F",
+            "beige": "#F5F5DC"
+          },
+          fontFamily: {
+            "display": ["Epilogue", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+  <div class="max-w-md mx-auto min-h-screen flex flex-col">
+    <!-- Encabezado -->
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-md">
+      <div class="flex items-center justify-between p-4">
+        <button onclick="window.location.href='../index.html'" class="p-2 -ml-2 text-content-light dark:text-content-dark hover:text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <h1 class="text-xl font-bold text-center flex-1">Servicios</h1>
+        <div class="w-10"></div>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="flex-grow p-4 space-y-4">
+      <!-- Servicio 1 -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex shadow-md">
+        <div class="p-4 flex-1">
+          <p class="text-sm text-olive dark:text-beige">60 min</p>
+          <h2 class="text-lg font-bold mt-1">Masaje Relajante</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Un masaje suave para aliviar el estrés y la tensión muscular.</p>
+          <p class="text-base font-bold text-primary mt-3">$120</p>
+        </div>
+        <div class="w-32 flex-shrink-0">
+          <img src="../assets/img/servicio1.jpg" alt="Masaje Relajante" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex shadow-md">
+        <div class="p-4 flex-1">
+          <p class="text-sm text-olive dark:text-beige">90 min</p>
+          <h2 class="text-lg font-bold mt-1">Tejido Profundo</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Ideal para aliviar dolores musculares crónicos y mejorar la movilidad.</p>
+          <p class="text-base font-bold text-primary mt-3">$180</p>
+        </div>
+        <div class="w-32 flex-shrink-0">
+          <img src="../assets/img/servicio2.jpg" alt="Tejido Profundo" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex shadow-md">
+        <div class="p-4 flex-1">
+          <p class="text-sm text-olive dark:text-beige">75 min</p>
+          <h2 class="text-lg font-bold mt-1">Piedras Calientes</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Combina el masaje terapéutico con piedras calientes para relajar los músculos.</p>
+          <p class="text-base font-bold text-primary mt-3">$150</p>
+        </div>
+        <div class="w-32 flex-shrink-0">
+          <img src="../assets/img/servicio3.jpg" alt="Piedras Calientes" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex shadow-md">
+        <div class="p-4 flex-1">
+          <p class="text-sm text-olive dark:text-beige">60 min</p>
+          <h2 class="text-lg font-bold mt-1">Aromaterapia</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Utiliza aceites esenciales para mejorar el bienestar físico y emocional.</p>
+          <p class="text-base font-bold text-primary mt-3">$130</p>
+        </div>
+        <div class="w-32 flex-shrink-0">
+          <img src="../assets/img/servicio4.jpg" alt="Aromaterapia" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex shadow-md">
+        <div class="p-4 flex-1">
+          <p class="text-sm text-olive dark:text-beige">90 min</p>
+          <h2 class="text-lg font-bold mt-1">Masaje Tailandés</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Combina estiramientos asistidos y presión en puntos específicos.</p>
+          <p class="text-base font-bold text-primary mt-3">$200</p>
+        </div>
+        <div class="w-32 flex-shrink-0">
+          <img src="../assets/img/servicio5.jpg" alt="Masaje Tailandés" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-beige dark:border-olive/30 shadow-t-lg">
+      <div class="flex justify-around p-2 text-olive dark:text-beige">
+        <a class="flex flex-col items-center gap-1" href="../index.html">
+          <span class="text-xs font-medium">Inicio</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-primary" href="servicios.html">
+          <span class="text-xs font-bold">Servicios</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="reservas.html">
+          <span class="text-xs font-medium">Reservas</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="productos.html">
+          <span class="text-xs font-medium">Productos</span>
+        </a>
+        <a class="flex flex-col items-center gap-1" href="#">
+          <span class="text-xs font-medium">Perfil</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
