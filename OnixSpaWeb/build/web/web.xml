@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>ReservaServlet</servlet-name>
+    <servlet-class>com.onixspa.servlet.ReservaServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ReservaServlet</servlet-name>
+    <url-pattern>/ReservaServlet</url-pattern>
+</servlet-mapping>
